@@ -1,0 +1,46 @@
+#! /usr/bin/env bash
+#
+#  edit and run this script to update the run scripts for the pipeline
+#
+
+common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150"
+common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150 pix_list=0,1,2,3,4,6,7,8,9,10,11,12,13,14,15"
+common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150 pix_list=1,2,3,4,6,7,8,9,10,11"
+common="admit=0 dv=100 dw=300 restart=1 admit=0 extent=150 pix_list=1,2,3,4,6,7,8,9,10,11"
+
+project="2021-S1-MX-3"
+
+# o=$(lmtinfo.py grep Arp91 Map | sort | awk '{print $2}')
+
+# good ones for the combination
+on1="97559 97560 97562 97563 97905 97906 97907 97908 97912 97913"
+
+
+# bad ones to be fully removed from final combination
+on1b=""
+
+
+obsnums="$on1 $on1b"
+
+
+#                       create the run file for single obsnum runs, also incoorporate any obsnum specific arguments
+job1=$project.run1
+job2=$project.run2
+rm -f $job1 $job2
+touch $job1 $job2
+for o in $obsnums ; do
+    if [ -e $o.args ]; then
+	args=$(cat $o.args)
+    fi
+    echo SLpipeline.sh obsnum=$o $common $args >> $job1
+    args=""
+done
+
+#                       create the run file for combination runs
+
+echo SLpipeline.sh obsnums=$(echo $on1 | sed 's/ /,/g') srdp=1 >> $job2
+
+echo "Found $(cat $job1 | wc -l) single obsnums in $job1"
+echo "Found $(cat $job2 | wc -l) combinations in $job2"
+echo "Have fun running them."
+
