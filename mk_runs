@@ -6,7 +6,7 @@
 common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150"
 common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150 pix_list=0,1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 common="admit=0 dv=200 dw=200 restart=1 admit=0 extent=150 pix_list=1,2,3,4,6,7,8,9,10,11"
-common="admit=0 dv=100 dw=300 restart=1 admit=0 extent=150 pix_list=1,2,3,4,6,7,8,9,10,11"
+common="admit=0 dv=350 dw=300 restart=1 admit=0 extent=150 pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 
 project="2021-S1-MX-3"
 
@@ -18,7 +18,7 @@ on1="97559 97560 97562 97563 97905 97906 97907 97908 97912 97913"
 # Arp143
 on2="97955 97956 97960 97961 97965 97966"
 # NGC6786
-on3="98082 98083 98138 98139 98768 98769 98773 98774 98778"
+on3="98082 98083 98138 98139 98768 98769 98773 98774 98778 98779"
 # 
 
 # bad ones to be fully removed from final combination
