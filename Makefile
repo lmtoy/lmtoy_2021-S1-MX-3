@@ -33,7 +33,12 @@ run2:
 	@echo "    parallel --jobs 16 < $(RUN2)"
 	@echo "    bash $(RUN2)"
 
-summary:
+summary_old:
 	@for p in $(PID); do \
 	(echo $$p; cp comments.txt $(WORK_LMT)/$$p; cd $(WORK_LMT)/$$p; mk_summary1.sh > README.html); \
+	done
+
+summary:
+	@for p in $(PID); do \
+	(echo $$p; cd $(WORK_LMT)/$$p; mk_summary1.sh > index.html); \
 	done
