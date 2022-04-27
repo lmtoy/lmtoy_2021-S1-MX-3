@@ -67,6 +67,26 @@ via your [unix shell](https://www.gnu.org/software/bash/):
 
 but this will take a while of course.
 
+## Science:
+
+### NGC6786
+
+The neighbor LEDA 62867 was also detected, seemingly with about 1/10th of flux of NGC6786.
+VLSR was seen around 7550, but catalog claims 7406. Thus we need to set the
+baseline window (dv,dw) a bit odd. E.g. dv=350 dw=300 or a manual channel number,
+or a fake restfreq?   Fixing the window changed the flux ratio to 1:4 !
+
+NGC6786 is resolved, the kinematic PA is around 200-210.   LEDA 62867
+might be more like 270, but not well resolved.
+
+
+### Arp91, aka NC5953/4
+
+We have CARMA and GBT data for this.
+
+### Arp143, aka 
+
+
 
 ## Files:
 
