@@ -19,13 +19,14 @@ on1="97559 97560 97562 97563 97905 97906 97907 97908 97912 97913"
 on2="97955 97956 97960 97961 97965 97966"
 # NGC6786
 on3="98082 98083 98138 98139 98768 98769 98773 98774 98778 98779"
-# 
+# NGC5376
+on4="99286 99288 99290 99291 99295 99296 99300 99301 99303 99304 99306 99307 99319 99320 99322 99323 99341 99342"
 
 # bad ones to be fully removed from final combination
 on1b=""
 
 
-obsnums="$on1 $on1b $on2 $on3"
+obsnums="$on1 $on1b $on2 $on3 $on4"
 
 
 #                       create the run file for single obsnum runs, also incoorporate any obsnum specific arguments
