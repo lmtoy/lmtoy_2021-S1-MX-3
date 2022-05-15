@@ -74,7 +74,7 @@ n1 = 0
 for s in on.keys():
     for o in on[s]:
         cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 " % (o,s,pars1[s])
-        cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 tap=1 %s" % (o,s,pars2[s], pars3[o])
+        cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], pars3[o])
         fp1.write("%s\n" % cmd1)
         fp2.write("%s\n" % cmd2)
         n1 = n1 + 1
