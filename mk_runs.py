@@ -73,8 +73,8 @@ fp4 = open(run2a, "w")
 n1 = 0
 for s in on.keys():
     for o in on[s]:
-        cmd1 = "SLpipeline.sh _s=%s %s admit=0 restart=1 obsnum=%d" % (s,pars1[s], o)
-        cmd2 = "SLpipeline.sh _s=%s %s admit=0 tap=1 %s  obsnum=%d" % (s,pars2[s], pars3[o], o)
+        cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 " % (o,s,pars1[s])
+        cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 tap=1 %s" % (o,s,pars2[s], pars3[o])
         fp1.write("%s\n" % cmd1)
         fp2.write("%s\n" % cmd2)
         n1 = n1 + 1
