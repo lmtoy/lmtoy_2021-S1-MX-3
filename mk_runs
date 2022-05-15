@@ -13,14 +13,16 @@ project="2021-S1-MX-3"
 # o=$(lmtinfo.py grep Arp91 Map | sort | awk '{print $2}')
 
 # good ones for the combination
-# Arp91
+# Arp91    peak 10   Jy.km/s
 on1="97559 97560 97562 97563 97905 97906 97907 97908 97912 97913"
-# Arp143
+# Arp143   peak 3.5
 on2="97955 97956 97960 97961 97965 97966"
-# NGC6786
+# NGC6786  peak 7.5
 on3="98082 98083 98138 98139 98768 98769 98773 98774 98778 98779"
-# NGC5376
+# NGC5376  peak 2.5
 on4="99286 99288 99290 99291 99295 99296 99300 99301 99303 99304 99306 99307 99319 99320 99322 99323 99341 99342"
+# NGC5720
+on5="99546 99547 99549 99550 99552 99553"
 
 # bad ones to be fully removed from final combination
 on1b=""
@@ -44,10 +46,11 @@ done
 
 #                       create the run file for combination runs
 
-echo SLpipeline.sh obsnums=$(echo $on1 | sed 's/ /,/g') srdp=1 >> $job2
-echo SLpipeline.sh obsnums=$(echo $on2 | sed 's/ /,/g') srdp=1 >> $job2
-echo SLpipeline.sh obsnums=$(echo $on3 | sed 's/ /,/g') srdp=1 >> $job2
-echo SLpipeline.sh obsnums=$(echo $on4 | sed 's/ /,/g') srdp=1 >> $job2
+echo SLpipeline.sh obsnums=$(echo $on1 | sed 's/ /,/g') srdp=1 _s=Arp91   >> $job2
+echo SLpipeline.sh obsnums=$(echo $on2 | sed 's/ /,/g') srdp=1 _s=Arp143  >> $job2
+echo SLpipeline.sh obsnums=$(echo $on3 | sed 's/ /,/g') srdp=1 _s=NGC6786 >> $job2
+echo SLpipeline.sh obsnums=$(echo $on4 | sed 's/ /,/g') srdp=1 _s=NGC5376 >> $job2
+echo SLpipeline.sh obsnums=$(echo $on5 | sed 's/ /,/g') srdp=1 _s=NGC5720 >> $job2
 
 echo "Found $(cat $job1 | wc -l) single obsnums in $job1"
 echo "Found $(cat $job2 | wc -l) combinations in $job2"
