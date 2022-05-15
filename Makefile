@@ -13,11 +13,11 @@ help:
 	@echo "   summary   - update the project summary index"
 
 
-$(RUN1):	mk_runs
-	./mk_runs
+$(RUN1):	mk_runs.py
+	./mk_runs.py
 
-$(RUN2):	mk_runs
-	./mk_runs
+$(RUN2):	mk_runs.py
+	./mk_runs.py
 
 runs:	$(RUN1) $(RUN2)
 
@@ -40,5 +40,5 @@ summary_old:
 
 summary:
 	@for p in $(PID); do \
-	(echo $$p; cd $(WORK_LMT)/$$p; mk_summary1.sh > index.html); \
+	(echo $$p; cd $(WORK_LMT)/$$p; mk_summary1.sh > README.html); \
 	done
