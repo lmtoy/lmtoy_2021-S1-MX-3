@@ -20,9 +20,9 @@ on['NGC5720'] = [99546, 99547, 99549, 99550, 99552, 99553]
 
 #        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
-pars1['Arp91']   = "dv=250 dw=400"
-pars1['Arp143']  = "dv=350 dw=300"
-pars1['NGC6786'] = "dv=350 dw=300"
+pars1['Arp91']   = "dv=250 dw=400 extent=240 edge=1"
+pars1['Arp143']  = "dv=200 dw=450 extent=240"
+pars1['NGC6786'] = "dv=350 dw=300 extent=240"
 pars1['NGC5376'] = "dv=350 dw=300"
 pars1['NGC5720'] = "dv=350 dw=300"
 
@@ -30,7 +30,7 @@ pars1['NGC5720'] = "dv=350 dw=300"
 pars2 = {}
 pars2['Arp91']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 pars2['Arp143']  = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC6786'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
+pars2['NGC6786'] = "pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
 pars2['NGC5376'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13"
 pars2['NGC5720'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 
