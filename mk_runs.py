@@ -9,9 +9,9 @@ import sys
 
 project="2021-S1-MX-3"
 
-#        obsnums per source
+#        obsnums per source (make it negative if not added to the final combination)
 on = {}
-on['Arp91']   = [97559, 97560, 97562, 97563, 97905, 97906, 97907, 97908, 97912, 97913]
+on['Arp91']   = [97559, 97560, 97562, 97563,-97905, 97906, 97907, 97908, 97912, 97913]
 on['Arp143']  = [97955, 97956, 97960, 97961, 97965, 97966, 99440, 99441, 99477, 99478, 99480, 99481]
 on['NGC6786'] = [98082, 98083, 98138, 98139, 98768, 98769, 98773, 98774, 98778, 98779]
 on['NGC5376'] = [99286, 99288, 99290, 99291, 99295, 99296, 99300, 99301, 99303, 99304, 99306, 99307,
@@ -56,7 +56,8 @@ def getargs(obsnum):
 #        specific parameters per obsnum will be in files <obsnum>.args
 pars3 = {}
 for s in on.keys():
-    for o in on[s]:
+    for o1 in on[s]:
+        o = abs(o1)
         pars3[o] = getargs(o)
 
 
@@ -70,19 +71,24 @@ fp2 = open(run1a, "w")
 fp3 = open(run2,  "w")
 fp4 = open(run2a, "w")
 
+#                           single obsnum
 n1 = 0
 for s in on.keys():
-    for o in on[s]:
+    for o1 in on[s]:
+        o = abs(o1)
         cmd1 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 restart=1 " % (o,s,pars1[s])
         cmd2 = "SLpipeline.sh obsnum=%d _s=%s %s admit=0 %s" % (o,s,pars2[s], pars3[o])
         fp1.write("%s\n" % cmd1)
         fp2.write("%s\n" % cmd2)
         n1 = n1 + 1
 
+#                           combination obsnums
 n2 = 0        
 for s in on.keys():
     obsnums = ""
-    for o in on[s]:
+    for o1 in on[s]:
+        o = abs(o1)
+        if o1 < 0: continue
         if obsnums == "":
             obsnums = "%d" % o
         else:
