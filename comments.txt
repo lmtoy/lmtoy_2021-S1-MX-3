@@ -1,9 +1,9 @@
 # nothing here yet
-97559 a.k.a.NGC5953/4
+97559       -0,-5 a.k.a.NGC5953/4
 97560       -0,-5
-97562       -0
-97563       -0
-97905       -0,-5 but all wiggly first halt
+97562       -0 5?
+97563       -0 5?
+97905       -0,-5 but all wiggly first half
 97906       -0,-5
 97907       -0,-5
 97908       -0,-5

@@ -20,7 +20,7 @@ on['NGC5720'] = [99546, 99547, 99549, 99550, 99552, 99553]
 
 #        common parameters per source on the first dryrun
 pars1 = {}
-pars1['Arp91']   = "dv=350 dw=300"
+pars1['Arp91']   = "dv=250 dw=400"
 pars1['Arp143']  = "dv=350 dw=300"
 pars1['NGC6786'] = "dv=350 dw=300"
 pars1['NGC5376'] = "dv=350 dw=300"
