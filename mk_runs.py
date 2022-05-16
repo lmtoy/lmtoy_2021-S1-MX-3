@@ -18,7 +18,7 @@ on['NGC5376'] = [99286, 99288, 99290, 99291, 99295, 99296, 99300, 99301, 99303, 
                  99319, 99320, 99322, 99323, 99341, 99342, 99492, 99493, 99495, 99496, 99498, 99499, 99537, 99538]
 on['NGC5720'] = [99546, 99547, 99549, 99550, 99552, 99553]
 
-#        common parameters per source on the first dryrun
+#        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
 pars1['Arp91']   = "dv=250 dw=400"
 pars1['Arp143']  = "dv=350 dw=300"
@@ -26,7 +26,7 @@ pars1['NGC6786'] = "dv=350 dw=300"
 pars1['NGC5376'] = "dv=350 dw=300"
 pars1['NGC5720'] = "dv=350 dw=300"
 
-#        common parameters per source on subsequent runs
+#        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
 pars2['Arp91']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 pars2['Arp143']  = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
