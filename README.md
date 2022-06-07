@@ -85,9 +85,10 @@ LEDA 62867 might be more like 270, but not well resolved.
 
 We have CARMA and GBT data for this.
 
-### Arp143, aka 
+### Arp143, aka NGC 2444/5
 
-
+Big HI tail (15 arcmin) to the north.
+CO only in N2444 it seems.   Not in GBT sample
 
 ## Files:
 
