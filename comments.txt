@@ -52,6 +52,10 @@
 99552       -0,-5
 99553       -0,-5
 
+100689       some overal wavy's
+100719       bad wavy's last half
+100723       ok
+
 
 97955_97961 .
 97955_97966 ALL SO FAR
