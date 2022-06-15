@@ -56,6 +56,21 @@
 100719       bad wavy's last half
 100723       ok
 
+100979       ok, but tau very high
+#...
+100986       ok
+100988       wavy
+100989       some wavy
+100993       very wavy
+100994       very wavy
+100996       very wavy
+100997       some wavy
+100999       also -8?
+
+101010       .
+101011       .
+101013       some wavys
+101014       wavys
 
 97955_97961 .
 97955_97966 ALL SO FAR
