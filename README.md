@@ -6,7 +6,18 @@ This project observed a series of EDGE galaxies looking for CO(1-0).
 
 A total of objects
 
-More detailed descriptions are in the file **mk_runs**.
+More detailed descriptions are in the file **mk_runs.py**.
+
+### Summary
+
+	Arp91   NC5953/4    - clear detection in both; we have GBT and CARMA
+	Arp143  NGC2444/5   - clear detection (in main galaxy ; companion not yet)
+	NGC6786             - both main and companion detected 
+	NGC5376             - 
+	NGC5720             - two peaks detected (DV~300 km/s   DR~40") - 20 mK
+	NGC2540             - 
+	NGC5473             - nothing yet - 43 mK
+	NGC6173             - nothing yet
 
 
 ## LMTOY Data Reduction
