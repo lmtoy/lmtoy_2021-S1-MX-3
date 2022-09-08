@@ -10,7 +10,7 @@ More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-	Arp91   NC5953/4    - clear detection in both; we have GBT and CARMA
+	Arp91   NC5953/4    - clear detection in both; we have GBT and CARMA as well
 	Arp143  NGC2444/5   - clear detection (in main galaxy ; companion not yet)
 	NGC6786             - both main and companion detected 
 	NGC5376             - 
@@ -18,6 +18,8 @@ More detailed descriptions are in the file **mk_runs.py**.
 	NGC2540             - 
 	NGC5473             - nothing yet - 43 mK
 	NGC6173             - nothing yet
+
+A single RA-scan or DEC-scan map gives around 100mK noise if all beams work.
 
 
 ## LMTOY Data Reduction
