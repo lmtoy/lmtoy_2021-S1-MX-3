@@ -17,7 +17,7 @@ More detailed descriptions are in the file **mk_runs.py**.
 	NGC5720             - two peaks detected (DV~300 km/s   DR~40") - 20 mK
 	NGC2540             - 
 	NGC5473             - nothing yet - 43 mK
-	NGC6173             - nothing yet
+	NGC6173             - nothing yet - 43 mK
 
 
 ## LMTOY Data Reduction
