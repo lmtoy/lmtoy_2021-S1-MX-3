@@ -10,14 +10,16 @@ More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-	Arp91   NC5953/4    - clear detection in both; we have GBT and CARMA as well
-	Arp143  NGC2444/5   - clear detection (in main galaxy ; companion not yet)
-	NGC6786             - both main and companion detected 
-	NGC5376             - 
-	NGC5720             - two peaks detected (DV~300 km/s   DR~40") - 20 mK
-	NGC2540             - 
-	NGC5473             - nothing yet - 43 mK
-	NGC6173             - nothing yet - 43 mK
+As of June 16 we have 130 obsnums in 8 galaxies.
+
+	Arp91   NC5953/4    - clear detection in both; (GBT and CARMA too); 44 mK, ~14 K.km/s
+	Arp143  NGC2444/5   - clear detection (in main galaxy ; companion not yet) 36mK,  ~ 4
+	NGC6786             - both main and companion detected 38mk ; 36 mK, ~5
+	NGC5376             - clear detection ; 26 mK,  ~2.5
+	NGC5720             - two peaks detected (DV~300 km/s   DR~40") - 24 mK, 0.2
+	NGC2540             - nothing yet (only 4 obsnums) - 44 mK
+	NGC5473             - nothing yet - 23 mK
+	NGC6173             - nothing yet - 30 mK
 
 A single RA-scan or DEC-scan map gives around 100mK noise if all beams work.
 
