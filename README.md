@@ -10,16 +10,18 @@ More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-As of June 16 we have 130 obsnums in 8 galaxies.
+As of June 16 we have 130 obsnums in 8 galaxies. RMS and peak are provisional.
 
-	Arp91   NC5953/4    - clear detection in both; (GBT and CARMA too); 44 mK, ~14 K.km/s
-	Arp143  NGC2444/5   - clear detection (in main galaxy ; companion not yet) 36mK,  ~ 4
-	NGC6786             - both main and companion detected 38mk ; 36 mK, ~5
-	NGC5376             - clear detection ; 26 mK,  ~2.5
-	NGC5720             - two peaks detected (DV~300 km/s   DR~40") - 24 mK, 0.2
-	NGC2540             - nothing yet (only 4 obsnums) - 44 mK
-	NGC5473             - nothing yet - 23 mK
-	NGC6173             - nothing yet - 30 mK
+     Galaxy           #obsnum RMS  Peak
+			       mK  K.km/s
+     Arp91   NC5953/4    9/10  44  14     clear detection in both; (GBT and CARMA too)
+     Arp143  NGC2444/5  12/12  36   4     clear detection (in main galaxy ; companion not yet) 
+     NGC6786            10/10  38   5     both main and companion detected
+     NGC5376            24/26  26   2.5   clear detection
+     NGC5720            14/14  24   0.2   two peaks detected (DV~300 km/s   DR~40")
+     NGC2540             4/ 4  44   ?     nothing yet
+     NGC5473            31/32  23   ?     nothing yet
+     NGC6173            15/22  30   ?     nothing yet
 
 A single RA-scan or DEC-scan map gives around 100mK noise if all beams work.
 
