@@ -10,20 +10,23 @@ More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-As of June 16 we have 130 obsnums in 8 galaxies. RMS and peak are provisional.
+As of June 16 we have 130 obsnums in 8 galaxies. 20 hours skytime were used.
+RMS and peak are provisional pending QA on the pipeline.
 
-     Galaxy           #obsnum RMS  Peak
-			       mK  K.km/s
-     Arp91   NC5953/4    9/10  44  14     clear detection in both; (GBT and CARMA too)
-     Arp143  NGC2444/5  12/12  36   4     clear detection (in main galaxy ; companion not yet) 
-     NGC6786            10/10  38   5     both main and companion detected
-     NGC5376            24/26  26   2.5   clear detection
-     NGC5720            14/14  24   0.2   two peaks detected (DV~300 km/s   DR~40")
-     NGC2540             4/ 4  44   ?     nothing yet
-     NGC5473            31/32  23   ?     nothing yet
-     NGC6173            15/22  30   ?     nothing yet
+     Galaxy           #obsnum  EXP RMS  Peak     map
+                               mK  mK  K.km/s   size
+     Arp91   NC5953/4    9/10  33  44  14     171 x 153  clear detection in both; (GBT and CARMA too)
+     Arp143  NGC2444/5  12/12  29  36   4     180 x 215  clear detection (in main galaxy ; companion not yet) 
+     NGC6786            10/10  32  38   5     180 x 200  both main and companion detected
+     NGC5376            24/26  20  26   2.5   100 x 100  clear detection
+     NGC5720            14/14  27  24   0.2   100 x 100  two peaks detected (DV~300 km/s   DR~40")
+     NGC2540             4/ 4  50  44   ?     100 x 100  nothing yet
+     NGC5473            31/32  18  23   ?     100 x 100  nothing yet
+     NGC6173            15/22  26  30   ?     100 x 100  nothing yet
 
-A single RA-scan or DEC-scan map gives around 100mK noise if all beams work.
+A single RA-scan or DEC-scan map gives around 100mK noise if all beams work, exactly as the calculator predicts.
+The "EXP" column is what the radiometer eq. would predict. Notable NGC2540 and NGC5720 perform a little better,
+but QA is needed to verify.
 
 
 ## LMTOY Data Reduction
