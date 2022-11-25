@@ -4,13 +4,13 @@ This project observed a series of EDGE galaxies looking for CO(1-0).
 
 ## OBSNUM
 
-A total of objects
+A total of 8 objects (so far)
 
 More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-As of June 16 we have 130 obsnums in 8 galaxies. 20 hours skytime were used.
+As of June 16 2022 we have 130 obsnums in 8 galaxies. 20 hours skytime was used.
 RMS and peak are provisional pending QA on the pipeline.
 
      Galaxy           #obsnum  EXP RMS  Peak     map
