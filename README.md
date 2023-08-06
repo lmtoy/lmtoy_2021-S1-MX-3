@@ -10,7 +10,7 @@ More detailed descriptions are in the file **mk_runs.py**.
 
 ### Summary
 
-As of June 16 2022 we have 130 obsnums in 8 galaxies. 20 hours skytime was used.
+As of June 16 2022 we have 130 obsnums in 8 galaxies. About 20 hours skytime was used.
 RMS and peak are provisional pending QA on the pipeline.
 
      Galaxy           #obsnum  EXP RMS  Peak     map
@@ -24,7 +24,7 @@ RMS and peak are provisional pending QA on the pipeline.
      NGC5473            31/32  18  23   ?     100 x 100  nothing yet
      NGC6173            15/22  26  30   ?     100 x 100  nothing yet
 
-A single RA-scan or DEC-scan map gives around 100mK noise if all beams work, exactly as the calculator predicts.
+Each single RA-scan or DEC-scan map gives around 100mK noise if all beams work, exactly as the calculator predicts.
 The "EXP" column is what the radiometer eq. would predict. Notable NGC2540 and NGC5720 perform a little better,
 but QA is needed to verify.
 
@@ -61,31 +61,6 @@ This command creates the run files (it uses the **mk_runs** scripts):
 	  
 in this case just **2021-S1-MX-3.run1** and **2021-S1-MX-3.run2**
 
-### Running the pipeline
-
-
-With [SLURM](https://slurm.schedmd.com/documentation.html) this is the way:
-
-      sbatch_lmtoy 2021-S1-MX-3.run1
-      # wait for it to finish
-      sbatch_lmtoy 2021-S1-MX-3.run2
-
-whereas with [Gnu Parallel](https://www.gnu.org/software/parallel/)
-
-      parallel --jobs 16 2021-S1-MX-3.run1
-      parallel --jobs 16 2021-S1-MX-3.run2
-
-can be submitted in a shell as the seond one will wait until the first one has finished
-all pipeline calls. On "lma" this takes about 30 minutes to process all single obsnums
-(run1) and a few combination maps (run2)
-
-If you have no good parallel/batch processing available, the slow and trusted way is
-via your [unix shell](https://www.gnu.org/software/bash/):
-
-      bash 2021-S1-MX-3.run1
-      bash 2021-S1-MX-3.run2
-
-but this will take a while of course.
 
 ## Science:
 
@@ -110,11 +85,3 @@ We have CARMA and GBT data for this.
 Big HI tail (15 arcmin) to the north.
 CO only in N2444 it seems.   Not in GBT sample
 
-## Files:
-
-
-Description of the file that should be in this directory
-
-
-      lmtinfo.log               logfile from lmtinfo.py on all relevant science observations
-      mk_runs                   script to make the run files
