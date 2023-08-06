@@ -2,19 +2,11 @@
 #
 #   script generator for project="2021-S1-MX-3"
 #
-#
 
 import os
 import sys
 
-# in prep of the new lmtoy module
-try:
-    lmtoy = os.environ['LMTOY']
-    sys.path.append(lmtoy + '/lmtoy')
-    import runs
-except:
-    print("No LMTOY with runs.py")
-    sys.exit(0)
+from lmtoy import runs
 
 project="2021-S1-MX-3"
 
@@ -52,16 +44,16 @@ pars1['NGC6173'] = "dv=300 dw=350 extent=240"
 
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
-pars2['Arp91']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['Arp143']  = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC6786'] = "pix_list=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC5376'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13"
-pars2['NGC5720'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC2540'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC5473'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
-pars2['NGC6173'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
+pars2['Arp91']   = "pix_list=-0,5"
+pars2['Arp143']  = "pix_list=-0,5"
+pars2['NGC6786'] = "pix_list=-0"
+pars2['NGC5376'] = "pix_list=-0,5,14,15"
+pars2['NGC5720'] = "pix_list=-0,5"
+pars2['NGC2540'] = "pix_list=-0,5"
+pars2['NGC5473'] = "pix_list=-0,5"
+pars2['NGC6173'] = "pix_list=-0,5"
 
 
 
-runs.mk_runs(project, on, pars1, pars2)
+runs.mk_runs(project, on, pars1, pars2, sys.argv)
 
