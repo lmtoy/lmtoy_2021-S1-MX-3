@@ -45,7 +45,7 @@ pars1['NGC6173'] = "dv=300 dw=350 extent=240"
 #        common parameters per source on subsequent runs (run1a, run2a)
 pars2 = {}
 pars2['Arp91']   = "pix_list=-0,5"
-pars2['Arp143']  = "pix_list=-0,5"
+pars2['Arp143']  = "pix_list=-0,5 birdie=1122"
 pars2['NGC6786'] = "pix_list=-0"
 pars2['NGC5376'] = "pix_list=-0,5,14,15"
 pars2['NGC5720'] = "pix_list=-0,5"
