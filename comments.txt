@@ -2,7 +2,7 @@
 97560       -0,-5
 97562       -0 5?                              # pix_list=-0,5
 97563       -0 5?                              # pix_list=-0,5
-97905       -0,-5 but all wiggly first half
+97905       QAFAIL -0,-5 but all wiggly first half
 97906       -0,-5
 97907       -0,-5
 97908       -0,-5
@@ -53,8 +53,8 @@
 99493       -0,-5?,-14,-15
 99495       -0,-14,-15
 99496       -0,-5,-14,-15 wavy
-99498       -0,-14,-15 very wavy; discard?
-99499       -0,-14,-15 very wavy; discard?
+99498       QAFAIL -0,-14,-15 very wavy; discard?
+99499       QAFAIL -0,-14,-15 very wavy; discard?
 99537       -0,-5,-14,-15
 99538       -0,-5,-14,-15 (last bad 14,15)
 99546       -0,-5 first good 14,15
@@ -63,18 +63,18 @@
 99550       -0,-5, 8?
 99552       -0,-5
 99553       -0,-5
-99662       .
-99663       .
-99667       .
-99668       .
+99662       some banding and ripples
+99663       some banding and ripples
+99667       some banding and ripples
+99668       some banding and ripples
 99727       .
 99728       .
 99754       .
 99755       .
 99757       .
 99758       .
-100216	     .
-100217	     .
+100216	     some banding and ripples
+100217	     some banding and ripples
 100219	     .
 100220	     .
 100222	     .
@@ -92,7 +92,7 @@
 100688	     .
 100689       some overal wavy's
 100718	     .
-100719       bad wavy's last half
+100719       QAFAIL bad wavy's last half
 100723       ok
 100724	     .
 100821	     .
@@ -114,11 +114,11 @@
 100985	     .
 100986       ok
 100988       wavy
-100989       some wavy
-100993       very wavy
-100994       very wavy
-100996       very wavy
-100997       some wavy - birdie? 6/12/10
+100989       QAFAIL some wavy
+100993       QAFAIL very wavy
+100994       QAFAIL very wavy
+100996       QAFAIL very wavy
+100997       QAFAIL some wavy - birdie? 6/12/10
 100999       also -8?
 101000	     .
 101002	     .
@@ -127,22 +127,16 @@
 101008	     .
 101010       .
 101011       .
-101013       some wavys
-101014       wavys
+101013       QAFAIL some wavys
+101014       QAFAIL wavys
 
 
-
-
-
-
-
-
-97559_97913  combo1 Arp91 
-97955_99481 combo1 Arp143 
-98082_98779 combo1 NGC6786 
-99286_99538 combo1 NGC5376 
-99546_100604 combo1 NGC5720 
-99662_99668 combo1 NGC2540
-100216_100868 combo1 NGC5473 
-100979_101011 combo1 NGC6173 
+97559_97913   combo Arp91 
+97955_99481   combo Arp143 
+98082_98779   combo NGC6786 
+99286_99538   combo NGC5376 
+99546_100604  combo NGC5720 
+99662_99668   combo NGC2540
+100216_100868 combo NGC5473 
+100979_101011 combo NGC6173 
 
