@@ -34,7 +34,7 @@ on['NGC6173'] = [ 100979, 100980, 100982, 100983, 100985, 100986, 100988,-100989
 #        common parameters per source on the first dryrun (run1, run2)
 pars1 = {}
 pars1['Arp91']   = "dv=250 dw=400 extent=240 edge=1"
-pars1['Arp143']  = "dv=200 dw=450 extent=240"         # has small birdie
+pars1['Arp143']  = "dv=250 dw=450 extent=240"         # has small birdie
 pars1['NGC6786'] = "dv=350 dw=300 extent=240"         # vlsr is off, need bigger dv
 pars1['NGC5376'] = "dv=250 dw=400 extent=240"
 pars1['NGC5720'] = "dv=300 dw=350 extent=240"
