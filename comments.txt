@@ -1,16 +1,16 @@
-97559       -0,-5 a.k.a. NGC 5953/4
-97560       -0,-5
-97562       -0 5?                              # pix_list=-0,5
-97563       -0 5?                              # pix_list=-0,5
-97905       QAFAIL -0,-5 but all wiggly first half
-97906       -0,-5
-97907       -0,-5
-97908       -0,-5
-97912       -0,-5
-97913       -0,-5
+97559       a.k.a NGC 5953/4
+97560       .
+97562       maybe 5 ok                         # pix_list=-0,5
+97563       maybe 5 ok                         # pix_list=-0,5
+97905       QAFAIL, all wiggly first half
+97906       .
+97907       .
+97908       .
+97912       .
+97913       .
 97915       pointing
 97955       .  a.k.a. NGC NGC2444/5
-97956       .  Arp143 has a small birdie
+97956       .  Arp143 has a small birdie  
 97960       .
 97961       .
 97965       .
@@ -131,8 +131,8 @@
 101014       QAFAIL wavys
 
 
-97559_97913   combo Arp91 
-97955_99481   combo Arp143 
+97559_97913   combo Arp91 NGC 5953/4
+97955_99481   combo Arp143 a.k.a. NGC 2444/2445 
 98082_98779   combo NGC6786 
 99286_99538   combo NGC5376 
 99546_100604  combo NGC5720 
