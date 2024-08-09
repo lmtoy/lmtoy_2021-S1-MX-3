@@ -57,7 +57,7 @@
 99499       QAFAIL -0,-14,-15 very wavy; discard?
 99537       -0,-5,-14,-15
 99538       -0,-5,-14,-15 (last bad 14,15)
-99546       -0,-5 first good 14,15
+99546       first good 14,15 [sky cov?]
 99547       -0,-5
 99549       -0,-5
 99550       -0,-5, 8?
@@ -68,11 +68,15 @@
 99667       some banding and ripples
 99668       some banding and ripples
 99727       .
-99728       .
-99754       .
-99755       .
-99757       .
-99758       .
+99728       beam5 ok
+99754       beam5 ok
+99755       beam5 ok
+99757       beam5 ok
+99758       beam5 ok
+
+100167       some banding and ripples
+100171       some banding and ripples
+
 100216	     some banding and ripples
 100217	     some banding and ripples
 100219	     .
