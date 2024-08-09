@@ -19,7 +19,7 @@ RMS and peak are provisional pending QA on the pipeline.
      Arp143  NGC2444/5  12/12  29  32    4     180 x 215  clear detection (in main galaxy ; companion not) 
      NGC6786            10/10  32  32    5     180 x 200  both main and companion detected
      NGC5376            24/26  20  34    2.5   100 x 100  clear resolved detection, rot gal
-     NGC5720            14/14  27  33    0.2   100 x 100  weak in PV10  - two peaks detected (DV~300 km/s  DR~40" PA~45) 7600-7950
+     NGC5720            28/28  ..  28    0.2   100 x 100  clear detection  PV: (DV~300 km/s  DR~40" PA~45) 7600-7950
      NGC2540             4/ 4  50  70    ?     100 x 100  weak in PV10 - range 6160-6410
      NGC5473            31/32  18  29    ?     100 x 100  no detection
      NGC6173            15/22  26  41    ?     100 x 100  no detection
@@ -51,4 +51,19 @@ We have CARMA and GBT data for this.
 
 Big HI tail (15 arcmin) to the north.
 CO only in N2444 it seems.   Not in GBT sample
+
+
+
+## Birdies
+
+This is one of the unusual 800MHz data that sometimes has birdies!:
+
+* Arp143  - shows up strong in Tsys, but weak in data
+* Arp91 - clean
+* NGC6786 - clean
+* NGC5376 - 99286 only in beams 14,15 that were bad
+* NGC5720 - clean
+* NGC2540 - clean 
+* NGC5473 - clean
+* NGC6173 - clean
 
