@@ -58,8 +58,8 @@ CO only in N2444 it seems.   Not in GBT sample
 
 This is one of the unusual 800MHz data that sometimes has birdies!:
 
-* Arp143  - shows up strong in Tsys, but weak in data
-* Arp91 - clean
+* Arp143  - shows up strong in Tsys, but weak in data [3955]
+* Arp91   - clean [1926]
 * NGC6786 - clean
 * NGC5376 - 99286 only in beams 14,15 that were bad
 * NGC5720 - clean
